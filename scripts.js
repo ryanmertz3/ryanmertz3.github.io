@@ -1,17 +1,19 @@
+document.addEventListener('DOMContentLoaded', function () {
+  const dropdowns = document.querySelectorAll('.dropdown');
 
-  function toggleDropdown(id) {
-    const dropdownContent = document.getElementById(id);
-    dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-  }
-
-  function initDropdowns() {
-    const dropdownButtons = document.querySelectorAll('.dropdown-button');
-
-    dropdownButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        toggleDropdown(button.dataset.target);
+  dropdowns.forEach((dropdown) => {
+      dropdown.querySelector('.dropbtn').addEventListener('click', function () {
+          const content = dropdown.querySelector('.dropdown-content');
+          content.classList.toggle('show');
       });
-    });
-  }
+  });
 
-  document.addEventListener('DOMContentLoaded', initDropdowns);
+  window.addEventListener('click', function (event) {
+      if (!event.target.matches('.dropbtn')) {
+          const openDropdowns = document.querySelectorAll('.dropdown-content.show');
+          openDropdowns.forEach((openDropdown) => {
+              openDropdown.classList.remove('show');
+          });
+      }
+  });
+});
