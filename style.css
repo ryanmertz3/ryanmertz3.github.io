@@ -14,14 +14,14 @@ body::before {
 }
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 2.4;
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
 .frame {
-  border: 5px solid #ccc;
+  border: 3px dashed #f00;
   display: inline-block;
   margin-top: 2rem;
   padding: 1rem;
@@ -32,11 +32,11 @@ img {
 }
 
 header {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 nav {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .dropdown {
@@ -46,17 +46,17 @@ nav {
 
 .dropdown-content {
   background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
   display: none;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  min-width: 240px;
+  box-shadow: 4 8px 16px 0 rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: green;
   text-decoration: none;
   display: block;
   margin-bottom: 8px;
@@ -67,5 +67,15 @@ nav {
 }
 
 button {
-  background-color: #
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
 }
