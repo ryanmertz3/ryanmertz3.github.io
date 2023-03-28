@@ -30,7 +30,7 @@
     
     <nav>
     <div class="dropdown">
-      <button onclick="toggleDropdown()">Other Profiles of Ryan</button>
+      <button onclick="toggleDropdown('dropdown-content-1')">Other Profiles of Ryan</button>
       <div id="dropdownMenu" class="dropdown-content">
         <a href="https://www.linkedin.com/in/ryanmertz1992/" target="_blank">LinkedIn</a>
         <a href="https://github.com/ryanmertz3/" target="_blank">GitHub</a>
@@ -42,7 +42,7 @@
     
  <nav>
    <div class="dropdown">
-      <button onclick="toggleDropdown()">Extra Courses / Learning</button>
+      <button onclick="toggleDropdown('dropdown-content-2')">Extra Courses / Learning</button>
       <div id="dropdownMenu" class="dropdown-content">
         <a href="https://www.codecademy.com/profiles/RyanMertz/" target="_blank">Code Academy</a>
         <a href="https://www.exercism.com/profiles/RyanMertz3/" target="_blank">Exercism</a>
@@ -63,9 +63,9 @@
     </div>
     
     <div>
-     <a class="spooky-link" href="#">Would you like to play a game?</a>
+     <a class="spooky-link" href="/scarypopup.png">Would you like to play a game?</a>
        <div class="image-popup">
-          <img src="booscary.jpg" alt="scary pop up rps" />
+          <img src="booscary.jpg" alt="scary rps" />
        </div>
     </div>
     
@@ -76,8 +76,8 @@
   </main>    
 </body>
     <script>
-  function toggleDropdown() {
-    const dropdownContent = document.querySelector('.dropdown-content');
+  function toggleDropdown(id) {
+    const dropdownContent = document.getElementById(id);
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
   }
 </script>
