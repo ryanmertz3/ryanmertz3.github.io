@@ -3,82 +3,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ryan Mertz | Home</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js" defer></script>
+  <title>Ryan Mertz</title>
+  <style>
+    body::before {
+      content: "";
+      background-image: url("skyline.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      opacity: 0.3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .frame {
+      border: 8px dashed #aaaaaa;
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    header {
+      margin-bottom: 1rem;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .dropdown-button {
+      background-color: #007bff;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      background-color: #7fffd4;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      display: none;
+      min-width: 240px;
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: green;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .dropdown-content a:hover {
+      color: #007bff;
+    }
+
+    .spooky-link {
+      font-family: "Creepster", cursive;
+      font-size: 24px;
+      color: red;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .image-popup {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .image-popup img {
+      max-width: 300px;
+      max-height: 200px;
+    }
+  </style>
 </head>
-  
 <body>
-  
   <header>
+    <h1>Ryan Mertz</h1>
     <div class="frame">
-      <h1>Ryan Mertz</h1>
       <img src="ryanmertzphoto.png" alt="Ryan Mertz">
     </div>
   </header>
-  
   <main>
-    <div style="text-align: center; color: #000080; font-family: Arial, sans-serif; padding: 12px;">
-    <h2>Software Developer</h2>  
+    <div style="text-align: center; color: #000080; font-family: Arial, sans-serif; padding: 0px;">
+      <h2>Software Developer</h2>
+    </div
+<div style="text-align: center; color: #7c919a; font-family: Arial, sans-serif; padding: 0px;">
+      <h3>Aspiring Data Engineer & Entrepreneur</h3>
+      <p>Purdue University Class of 2014</p>
+      <p>B.S. Management Information Systems</p>
+      <p>Full Stack / Rails / Android / Cisco</p>
     </div>
-   <div style="text-align: center; color: #000080; font-family: Arial, sans-serif; padding: 8px;">
-      <p>Contact Info</p>
-      <p>ryanmertz3@gmail.com</p>
-      <p>rmertz3@uic.edu</p>
-      <p>voip: 815-669-0733</p>
-    </div>
-    
-    <nav>
-    <div class="dropdown">
-      <button onclick="toggleDropdown('dropdown-content-1')">Other Profiles of Ryan</button>
-      <div id="dropdownMenu" class="dropdown-content">
-        <a href="https://www.linkedin.com/in/ryanmertz1992/" target="_blank">LinkedIn</a>
-        <a href="https://github.com/ryanmertz3/" target="_blank">GitHub</a>
-        <a href="https://dev.to/ryanmertz3/" target="_blank">TIL</a>
-        <a href="https://instagram.com.r.mertzy/" target="_blank">Instagram</a>
-      </div>
-    </div>
-  </nav>
-    
- <nav>
-   <div class="dropdown">
-      <button onclick="toggleDropdown('dropdown-content-2')">Extra Courses / Learning</button>
-      <div id="dropdownMenu" class="dropdown-content">
-        <a href="https://www.codecademy.com/profiles/RyanMertz/" target="_blank">Code Academy</a>
-        <a href="https://www.exercism.com/profiles/RyanMertz3/" target="_blank">Exercism</a>
-        <a href="https://www.teamtreehouse.com/profiles/RyanMertz/" target="_blank">Treehouse</a>
-      </div>
-    </div>
- </nav>
-    
-  <div style="text-align: center; color: #7c919a; font-family: Arial, sans-serif; padding: 10px;">
-       <h2>Education & Skills</h2>
-   </div>
-    
-  <div style="text-align: center; color: #7c919a; font-family: Arial, sans-serif; padding: 4px;">
-     <h4><p>Aspiring Data Engineer & Entrepreneur</p></h4>
-         <p>Purdue University Class of 2014</p>
-    <p><t></t>B.S. Management Information Systems</p>
-         <p>Full Stack / Rails / Android / Cisco</p>
-    </div>
-    
-    <div>
-     <a class="spooky-link" href="/scarypopup.png">Would you like to play a game?</a>
-       <div class="image-popup">
-          <img src="booscary.jpg" alt="scary rps" />
-       </div>
-    </div>
-    
-      <div>
-         <a href="/readme.md">Additional Site Information</a>
-      </div
-        
-  </main>    
-</body>
-    <script>
+    <nav class="nav">
+      <div class="dropdown">
+  <button class="dropdown-button" data-target="dropdown-content-1">Learning Programs & Profiles</button>
+  <div id="dropdown-content-1" class="dropdown-content">
+    <a href="https://www.codecademy.com/profiles/RyanMertz/" target="_blank">Code Academy</a>
+    <a href="https://www.exercism.com/profiles/RyanMertz3/" target="_blank">Exercism</a>
+    <a href="https://www.teamtreehouse.com/profiles/RyanMertz/" target="_blank">Treehouse</a>
+  </div>
+</div>
+    </nav>
+<nav class="nav">
+  <div class="dropdown">
+    <button class="dropdown-button" data-target="dropdown-content-2" style="color: #7FFFD4; opacity:0.5;">Ryan's Professional Profiles</button>
+     <div id="dropdown-content-2" class="dropdown-content">
+     <a href="https://www.linkedin.com/in/ryanmertz1992/" target="_blank">LinkedIn</a>
+     <a href="https://github.com/ryanmertz3/" target="_blank">GitHub</a>
+     <a href="https://dev.to/ryanmertz3/" target="_blank">TIL</a>
+     <a href="https://gitlab.com/RMertz3/" target="_blank">GitLab</a>
+  </div>
+</div>
+    </nav>
+    <script src="scripts.js"></script>
+  <div>  
+   <script>
   function toggleDropdown(id) {
     const dropdownContent = document.getElementById(id);
     dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
   }
 </script>
+    </div>
+        <div>
+      <a class="spooky-link" href="#">Would you like to play a game?</a>
+      <div class="image-popup">
+        <img src="booscary.jpg" alt="scary pop up rps" />
+      </div>
+    </div>
+    <div style="text-align: center; color: #000080; font-family: Arial, sans-serif; padding: 2px;">
+      <p>Contact Info</p>
+      <p>ryanmertz3@gmail.com</p>
+      <p>rmertz3@uic.edu</p>
+      <p>voip: 815-669-0733</p>
+    </div>
+
+    <div>
+      <a href="/readme.md">Additional Site Information</a>
+    </div>
+
+  </main>
+  <script>
+    function toggleDropdown(id) {
+      const dropdownContent = document.getElementById(id);
+      dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
 </html>
+
