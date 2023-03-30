@@ -48,7 +48,7 @@
   
     <footer class="footer">
       <div class="business-card">
-        <img src="/business.jpeg" alt="business-card" class="card-image">
+      <img src="/business.jpeg" alt="business-card" class="card-image">
         <div class="card-info">
           <h5><u>Contact Info</u></h5>
           <ul>
@@ -59,8 +59,16 @@
           </ul>
         </div>
         </footer>
-      
-          <script src="/scripts.js"></script>
-        </body>
-      </html>
+      <h5 class="skills"><i>Full Stack | Ruby on Rails | Android | Cisco Networking | SQL</i></h5>
+      <script> 
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 0) {
+            document.querySelector('header').classList.add('header-animate');
+          } else {
+            document.querySelector('header').classList.remove('header-animate');
+          }
+        });
+      </script>
+      </body>
+    </html>
 
