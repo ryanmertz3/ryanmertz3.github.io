@@ -90,6 +90,11 @@ body{
   z-index: 1;
 }
 
+.dropdown-content.scrolled {
+  left: 33.33%;
+  transition: 2s;
+}
+
 .dropdown-content a {
   color: blue;
   text-decoration: none;
@@ -105,6 +110,20 @@ body{
   display: block;
 }
 
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 2s;
+}
+
+.footer.scrolled {
+  left: 33.33%;
+  width: 66.67%;
+  transition: 2s;
+}
 .rps img {
   display: none;
   position: absolute;
@@ -117,13 +136,19 @@ body{
   display: block;
 }
 
-.footer {
+.rps {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
-  background-color: gray;
-  text-align: center;
-  padding: 10px;
+  z-index: 10;
+  transition: 2s;
+}
+
+.rps.scrolled {
+  left: 33.33%;
+  width: 66.67%;
+  transition: 2s;
 }
 
 .business-card {
