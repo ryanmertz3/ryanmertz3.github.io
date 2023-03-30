@@ -12,7 +12,6 @@ body::before {
   z-index: -1;
 }
 
-
 body{
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -21,17 +20,17 @@ body{
   text-align: center;
 }
 
-  .hover-gold {
-    color: steelblue;
+.hover-gold {
+  color: steelblue;
+  transition: all 0.5s ease-in-out;
 }
 
-  .hover-gold:hover {
-    color: gold;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    font-style: italic;
+.hover-gold:hover {
+  color: gold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  font-style: italic;
+  cursor: pointer;
 }
-
-
 
 .frame {
   max-width: 300px;
@@ -42,11 +41,11 @@ body{
   box-shadow: inset 5em 1em gold;
   margin-bottom: 2rem;
 }
-  
+
 .degrees {
-  display: fixed center;
-  gap: 3rem;
+  display: flex;
   justify-content: center;
+  gap: 3rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
@@ -55,55 +54,96 @@ body{
   justify-content: center;
 }
 
-.dropdown {
+.dropdown-container {
   display: flex;
   justify-content: center;
   gap: 1rem;
   position: relative;
+  margin-top: 5rem;
 }
 
 .dropdown-button {
-  display: inline-block;
-  background-color: midnightblue;
+  background-color: royalblue;
   border: none;
-  color: #ff6322;
+  color: #fff;
   padding: 0px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 32px;
   margin: 0px;
   cursor: pointer;
   border-radius: 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.dropdown-button:hover {
+  background-color: steelblue;
 }
 
 .dropdown-content {
-  background-color: gray;
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  background-image: url("/hello_svg.svg");
+  background-size: cover;
+  border-radius: 4px;
   display: none;
   min-width: 240px;
   padding: 4px 4px;
   z-index: 1;
 }
-  
-  .dropdown-content a {
-    color: blue;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 8px;
-  }
 
-  .dropdown-content a:hover {
-    color: #007bff;
+.dropdown-content a {
+  color: blue;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.dropdown-content a:hover {
+  color: #007bff;
 }
 
 .show {
-    display: block;
-
-.foot  {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  position: relative;
+  display: block;
 }
+
+.rps img {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.rps:hover img {
+  display: block;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  text-align: center;
+  padding: 10px;
+}
+
+.business-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 300px;
+}
+
+.card-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.card-info
