@@ -31,23 +31,23 @@ body{
     font-style: italic;
 }
 
-img {
-  max-width: 510px;
-  border-radius: 16px;
-}   
+
 
 .frame {
-  max-width: 510px;
+  max-width: 300px;
   border-radius: 16px;
   display: inline-block;
   border-style: inset;
-  margin-bottom: 3rem;
+  padding: 3px;
+  box-shadow: inset 5em 1em gold;
+  margin-bottom: 2rem;
 }
   
 .degrees {
-  display: flex;
+  display: fixed center;
+  gap: 3rem;
   justify-content: center;
-  gap: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .intro {
@@ -100,34 +100,10 @@ img {
 
 .show {
     display: block;
-}
-.footer {
-  font-family: "Creepster", cursive;
-  font-size: 16px;
-  color: #880808;
-  text-decoration: none;
-  padding: 3;
-  position: relative;
-  width: 1026px
-  height: 16x
-}
 
 .foot  {
-  background-image: url"/hello_svg.svg";
-  display: none;
   position: absolute;
   top: 100%;
   left: 50%;
-  transform: translateX(-50%);
   position: relative;
-  width: 1026px
-  height: 16x
-}
-
-.image-popup:hover {
-  border-image: "/hello_svg.svg";
-  min-width: 720px;
-  min-height: 512px;
-}
-
 }
