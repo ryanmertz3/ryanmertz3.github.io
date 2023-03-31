@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const dropdowns = document.querySelectorAll('.dropdown');
 
   dropdowns.forEach((dropdown) => {
-      dropdown.querySelector('.dropbtn').addEventListener('click', function () {
+      dropdown.querySelector('.dropdown-button').addEventListener('click', function () {
           const content = dropdown.querySelector('.dropdown-content');
           content.classList.toggle('show');
       });
