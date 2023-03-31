@@ -33,8 +33,9 @@ body {
 }
 
 .header-content img{
-  width: 30%;
-  height: 30%;
+  max-width: 360px;
+  border-radius: 16px;
+  border-style: inset;
 }
 
 .header-content.scrolled {
