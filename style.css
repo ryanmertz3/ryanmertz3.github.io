@@ -32,8 +32,9 @@ body {
   transition: 2s;
 }
 
-.header-content.frame {
-  max-width: 200px;
+.header-content img{
+  width: 30%;
+  height: 30%;
 }
 
 .header-content.scrolled {
