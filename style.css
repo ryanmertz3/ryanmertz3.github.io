@@ -1,3 +1,36 @@
+.header-content {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 2s;
+}
+
+.header-content.scrolled {
+  width: 33.33%;
+  height: 100%;
+  transition: 2s;
+}
+
+.skills {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 66.67%;
+  white-space: nowrap;
+  overflow-wrap: break-word;
+  opacity: 0;
+  transition: 2s;
+}
+
+.skills.scrolled {
+  opacity: 1;
+  transition: 2s;
+}
 body::before {
   content: "";
   background-image: url("/skyline.png");
@@ -11,25 +44,12 @@ body::before {
   height: 100%;
   z-index: -1;
 }
-
 body{
   font-family: Arial, sans-serif;
   line-height: 1.5;
   margin: 0;
   padding: 0;
   text-align: center;
-}
-
-.hover-gold {
-  color: steelblue;
-  transition: all 0.5s ease-in-out;
-}
-
-.hover-gold:hover {
-  color: gold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-  font-style: italic;
-  cursor: pointer;
 }
 
 .frame {
@@ -41,134 +61,22 @@ body{
   box-shadow: inset 5em 1em gold;
   margin-bottom: 2rem;
 }
-
+  
 .degrees {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 3rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  align-items: center;
+  transition: 2s;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
-
-.intro {
-  display: flex;
-  justify-content: center;
-}
-
-.dropdown-container {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+.degrees.scrolled {
   position: relative;
-  margin-top: 5rem;
-}
-
-.dropdown-button {
-  background-color: royalblue;
-  border: none;
-  color: #fff;
-  padding: 0px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 32px;
-  margin: 0px;
-  cursor: pointer;
-  border-radius: 0px;
-  transition: all 0.5s ease-in-out;
-}
-
-.dropdown-button:hover {
-  background-color: steelblue;
-}
-
-.dropdown-content {
-  background-image: url("/hello_svg.svg");
-  background-size: cover;
-  border-radius: 4px;
-  display: none;
-  min-width: 240px;
-  padding: 4px 4px;
-  z-index: 1;
-}
-
-.dropdown-content.scrolled {
-  left: 33.33%;
-  transition: 2s;
-}
-
-.dropdown-content a {
-  color: blue;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.dropdown-content a:hover {
-  color: #007bff;
-}
-
-.show {
-  display: block;
-}
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  transition: 2s;
-}
-
-.footer.scrolled {
-  left: 33.33%;
-  width: 66.67%;
-  transition: 2s;
-}
-.rps img {
-  display: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.rps:hover img {
-  display: block;
-}
-
-.rps {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  transition: 2s;
-}
-
-.rps.scrolled {
-  left: 33.33%;
-  width: 66.67%;
-  transition: 2s;
-}
-
-.business-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  position: absolute;
-  bottom: 0;
-  right: 0%;
-  transform: translate(-50%, 50%);
-  width: 300px;
-}
-
-.card-image {
-  width: 100px;
-  height: 100px;
-  margin-right: 10px;
-}
-
-.card-info
+  top: 100px;
+  width: 80%;
+  height: 70%;
+  transition: 4s;
