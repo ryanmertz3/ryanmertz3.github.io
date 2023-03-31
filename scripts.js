@@ -16,25 +16,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const dropdowns = document.querySelectorAll('.dropdown');
-
-  dropdowns.forEach((dropdown) => {
-      dropdown.querySelector('.dropdown-button').addEventListener('click', function () {
-          const content = dropdown.querySelector('.dropdown-content');
-          content.classList.toggle('show');
-      });
-  });
-
-  window.addEventListener('click', function (event) {
-      if (!event.target.matches('.dropbtn')) {
-          const openDropdowns = document.querySelectorAll('.dropdown-content.show');
-          openDropdowns.forEach((openDropdown) => {
-              openDropdown.classList.remove('show');
-          });
-      }
-  });
-});
 function toggleDropdown(event) {
   const dropdownContent = event.target.nextElementSibling;
   dropdownContent.classList.toggle("show");
