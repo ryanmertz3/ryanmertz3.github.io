@@ -3,16 +3,10 @@ window.addEventListener("scroll", () => {
     document.querySelector(".header-content").classList.add("scrolled");
     document.querySelector(".skills").classList.add("scrolled");
     document.querySelector(".degrees").classList.add("scrolled");
-    document.querySelector(".footer").classList.add("scrolled");
-    document.querySelector(".rps").classList.add("scrolled");
-    document.querySelectorAll(".dropdown-content").forEach(content => content.classList.add("scrolled"));
   } else {
     document.querySelector(".header-content").classList.remove("scrolled");
     document.querySelector(".skills").classList.remove("scrolled");
     document.querySelector(".degrees").classList.remove("scrolled");
-    document.querySelector(".footer").classList.remove("scrolled");
-    document.querySelector(".rps").classList.remove("scrolled");
-    document.querySelectorAll(".dropdown-content").forEach(content => content.classList.remove("scrolled"));
   }
 });
 
