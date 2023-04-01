@@ -75,7 +75,7 @@ body {
 .degrees2 {
  position: fixed;
  bottom: 0;
- right: 10%;
+ right: 80%;
  opacity: 0;
  transition: 2s;
 }
