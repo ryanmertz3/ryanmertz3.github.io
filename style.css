@@ -25,19 +25,26 @@ body {
   height: 80vh;
   width: 100vw;
   z-index: 5;
-  transition: 1s;
+  transition: 2s;
 }
 
 .header-content img {
   height: 30%;
   border-radius: 16px;
   border-style: inset;
+  margin-top: 2rem;
+  transition: 2s;
+}
+.header-content.scrolled img {
+  margin-top: 7rem;
+  transition: 2s;
 }
 
 .header-content.scrolled {
   width: 30%;
-  bottom: 50%;
-  transition: 1s;
+  bottom: 10%;
+  transition: 2s;
+  margin: 2rem;
 }
 
 .skills {
@@ -46,12 +53,12 @@ body {
   right: 5px;
   width: 25%;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 .skills.scrolled {
   opacity: 1;
-  transition: 1s;
+  transition: 2s;
 }
 .sticky {
   position: sticky;
@@ -59,11 +66,11 @@ body {
 }
 .degrees {
   opacity: 1;
-  transition: 1s;
+  transition: 2s;
 }
 .degrees.scrolled {
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 .degrees2 {
   position: fixed;
@@ -71,18 +78,18 @@ body {
   bottom: 5px;
   right: 5px;
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 
 .degrees2.scrolled {
   opacity: 0.5;
-  transition: 1s;
+  transition: 2s;
 }
 .main {
   opacity: 0;
-  transition: 1s;
+  transition: 2s;
 }
 .main.scrolled {
   opacity: 1;
-  transition: 1s;
+  transition: 2s;
 }
