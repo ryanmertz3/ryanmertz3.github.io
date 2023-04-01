@@ -29,23 +29,22 @@ body {
 }
 
 .header-content img {
-  height: 30%;
+  width: 30%;
   border-radius: 16px;
   border-style: inset;
-  opacity: 1;
   margin-top: 2rem;
-  transition: 2s;
+  transition: 1s;
 }
 .header-content.scrolled img {
-  margin-top: 6rem;
-  margin-right: 1rem;
-  opacity: 0.6;
-  transition: 2s;
+  margin-top: 5rem;
+  width: 100%;
+  transition: 1s;
+  opacity: 0.7;
 }
 
 .header-content.scrolled {
-  font-size: 1.4rem;
-  width: 25%;
+  font-size: 1.5rem;
+  width: 15%;
   bottom: 10%;
   transition: 2s;
   margin: 2rem;
@@ -61,13 +60,10 @@ body {
 }
 
 .skills.scrolled {
-  opacity: 1;
+  opacity: 0.9;
   transition: 2s;
 }
-.sticky {
-  position: sticky;
-  top: 50px;
-}
+
 .degrees {
   opacity: 1;
   transition: 2s;
@@ -86,10 +82,11 @@ body {
 }
 
 .degrees2.scrolled {
-  opacity: 0.6;
+  opacity: 0.5;
   transition: 2s;
 }
 .main {
+  align-items: flex-start;
   opacity: 0;
   transition: 0.5s;
 }
@@ -97,3 +94,8 @@ body {
   opacity: 1;
   transition: 2s;
 }
+.card-info {
+  position: sticky;
+  top: 5rem;
+}
+
