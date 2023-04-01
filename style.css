@@ -37,11 +37,12 @@ body {
 }
 .header-content.scrolled img {
   margin-top: 7rem;
+  margin-right: 10rem;
   transition: 2s;
 }
 
 .header-content.scrolled {
-  width: 30%;
+  width: 25%;
   bottom: 10%;
   transition: 2s;
   margin: 2rem;
