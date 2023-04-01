@@ -40,8 +40,9 @@ body {
 }
 
 .header-content.scrolled {
+  top: 10%;
   width: 33.33%;
-  height: 30%;
+  height: 100%;
   transition: 2s;
 }
 
