@@ -32,16 +32,19 @@ body {
   height: 30%;
   border-radius: 16px;
   border-style: inset;
+  opacity: 1;
   margin-top: 2rem;
   transition: 2s;
 }
 .header-content.scrolled img {
-  margin-top: 7rem;
-  margin-right: 10rem;
+  margin-top: 6rem;
+  margin-right: 1rem;
+  opacity: 0.6;
   transition: 2s;
 }
 
 .header-content.scrolled {
+  font-size: 1.4rem;
   width: 25%;
   bottom: 10%;
   transition: 2s;
@@ -54,7 +57,7 @@ body {
   right: 5px;
   width: 25%;
   opacity: 0;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 .skills.scrolled {
@@ -71,7 +74,7 @@ body {
 }
 .degrees.scrolled {
   opacity: 0;
-  transition: 2s;
+  transition: 0.5s;
 }
 .degrees2 {
   position: fixed;
@@ -79,16 +82,16 @@ body {
   bottom: 5px;
   right: 5px;
   opacity: 0;
-  transition: 2s;
+  transition: 0.5s;
 }
 
 .degrees2.scrolled {
-  opacity: 0.5;
+  opacity: 0.6;
   transition: 2s;
 }
 .main {
   opacity: 0;
-  transition: 2s;
+  transition: 0.5s;
 }
 .main.scrolled {
   opacity: 1;
