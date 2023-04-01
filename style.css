@@ -41,7 +41,7 @@ body {
 
 .header-content.scrolled {
   width: 33.33%;
-  height: 50%;
+  height: 30%;
   transition: 2s;
 }
 
@@ -75,7 +75,7 @@ body {
 .degrees2 {
  position: fixed;
  bottom: 0;
- left: 20px;
+ right: 10%;
  opacity: 0;
  transition: 2s;
 }
