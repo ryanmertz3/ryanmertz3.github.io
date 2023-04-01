@@ -36,18 +36,19 @@ body {
   transition: 1s;
 }
 .header-content.scrolled img {
-  margin-top: 5rem;
+  margin-top: 7rem;
   width: 100%;
   transition: 1s;
   opacity: 0.7;
 }
 
 .header-content.scrolled {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   width: 15%;
   bottom: 10%;
+  opacity: 0.7;
   transition: 2s;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .skills {
