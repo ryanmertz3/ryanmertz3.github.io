@@ -95,6 +95,13 @@ body {
   opacity: 1;
   transition: 2s;
 }
+
+.fullintro {
+  width: 40%;
+  font-size: 10pt;
+  
+}
+
 .card-info {
   position: sticky;
   top: 5rem;
