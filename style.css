@@ -98,7 +98,7 @@ body {
 .main .fullintro {
   margin-left: 35%;
   margin-right: 35%;
-  text-shadow: 2px 2px 4px yellow;
+  text-shadow: 0px 0px 1px yellow;
 }
 
 .card-info {
