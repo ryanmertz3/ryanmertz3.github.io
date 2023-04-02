@@ -107,8 +107,9 @@ body {
 .business-card img{
   width-max: 50px;
   position: sticky;
-  top: 90%;
-  opacity: 0.5;
+  top: 85%;
+  opacity: 0.2;
+  right-margin: 4rem;
 }
 
 
