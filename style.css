@@ -104,12 +104,12 @@ body {
 
 .business-card {
   position: sticky;
-  bottom: 0;
+  top: 80%;
 }
 
 
 .card-info {
   position: sticky;
-  bottom: 1rem;
+  top: 80%;
 }
 
