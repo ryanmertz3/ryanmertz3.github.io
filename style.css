@@ -87,7 +87,6 @@ body {
   transition: 2s;
 }
 .main {
-  align-items: flex-start;
   opacity: 0;
   transition: 0.5s;
 }
