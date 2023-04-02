@@ -95,7 +95,9 @@ body {
   transition: 2s;
 }
 
-.fullintro {
+.main .fullintro {
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .card-info {
