@@ -96,13 +96,20 @@ body {
 }
 
 .main .fullintro {
+  line-height: 1.6;
   margin-left: 35%;
   margin-right: 35%;
-  text-shadow: 0px 0px 1px yellow;
+  text-shadow: 0px 0px 1px white;
 }
+
+.business-card {
+  position: sticky;
+  bottom: 0;
+}
+
 
 .card-info {
   position: sticky;
-  top: 5rem;
+  bottom: 1rem;
 }
 
