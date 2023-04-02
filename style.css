@@ -22,23 +22,23 @@ body {
 .header-content {
   position: fixed;
   top: 0;
-  height: 80vh;
+  height: 70vh;
   width: 100vw;
   z-index: 5;
   transition: 2s;
 }
 
 .header-content img {
-  width: 30%;
+  width: 25%;
   border-radius: 16px;
   border-style: inset;
   margin-top: 2rem;
-  transition: 1s;
+  transition: 2s;
 }
 .header-content.scrolled img {
   margin-top: 7rem;
   width: 100%;
-  transition: 1s;
+  transition: 2s;
   opacity: 0.7;
 }
 
@@ -98,7 +98,7 @@ body {
 .main .fullintro {
   margin-left: 35%;
   margin-right: 35%;
-  text-shadow: 1px 1px 1px yellow;
+  text-shadow: 2px 2px 2px yellow;
 }
 
 .card-info {
