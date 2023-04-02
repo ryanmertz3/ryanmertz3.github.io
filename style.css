@@ -96,10 +96,8 @@ body {
 }
 
 .fullintro {
+  left: 30%;
   width: 40%;
-  right: 30%;
-  font-size: 10pt;
-  
 }
 
 .card-info {
